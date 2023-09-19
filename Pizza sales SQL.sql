@@ -78,13 +78,17 @@ GROUP BY pizza_category
 ORDER BY Total_Quantity_Sold DESC
 
 /*Top 5 Pizzas by Revenue*/
-SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
-FROM pizza_sales
+SELECT 
+    Top 5 pizza_name, SUM(total_price) AS Total_Revenue
+FROM 
+    pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue DESC
 
 7. Bottom 5 Pizzas by Revenue
-SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
-FROM pizza_sales
+SELECT 
+    Top 5 pizza_name, SUM(total_price) AS Total_Revenue
+FROM 
+    pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue ASC
